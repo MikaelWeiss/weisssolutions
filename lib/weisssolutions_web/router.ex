@@ -18,7 +18,6 @@ defmodule WeisssolutionsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/work", WorkController, :index
   end
 
   # Other scopes may use custom stacks.

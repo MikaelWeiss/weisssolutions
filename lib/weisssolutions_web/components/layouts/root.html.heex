@@ -41,52 +41,10 @@
             Weiss Solutions
           </a>
 
-          <!-- Navigation Links -->
-          <div class="hidden md:flex items-center ml-auto space-x-1">
-            <a href="/" class="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
-              Home
-            </a>
-            <a href="/work" class="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
-              Work
-            </a>
-            <a href="/contact" class="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
-              Contact
-            </a>
-
-            <!-- Dark Mode Toggle -->
-            <div class="pl-5">
-              <.dark_mode_toggle />
-            </div>
-          </div>
-
-          <!-- Mobile Menu and Dark Mode (Mobile) -->
-          <div class="flex items-center gap-2 md:hidden ml-auto">
+          <!-- Dark Mode Toggle -->
+          <div class="ml-auto">
             <.dark_mode_toggle />
-            <button 
-              type="button"
-              class="p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300"
-              phx-click={JS.toggle(to: "#mobile-menu")}
-            >
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
           </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden border-t border-black/[0.05] dark:border-white/[0.05]">
-        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
-          <a href="/" class="block px-4 py-3 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
-            Home
-          </a>
-          <a href="/work" class="block px-4 py-3 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
-            Work
-          </a>
-          <a href="/contact" class="block px-4 py-3 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
-            Contact
-          </a>
         </div>
       </div>
     </nav>
