@@ -1,25 +1,25 @@
-<main id="main-content" class="min-h-screen bg-[#1c1c1c] transition-colors duration-300" phx-hook="AnimationHook">
+<main id="main-content" class="min-h-screen" phx-hook="AnimationHook">
   <!-- Hero Section -->
   <section class="container mx-auto px-4 py-20 md:py-32">
     <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">
+      <h1 class="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4 animate-fade-in">
         Weiss Solutions LLC
       </h1>
       
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in-delay">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in-delay">
         Transforming Ideas into 
-        <span class="text-emerald-500">Polished Digital Solutions</span>
+        <span class="text-emerald-600 dark:text-emerald-400">Polished Digital Solutions</span>
       </h2>
       
-      <p class="text-lg md:text-xl text-gray-300 mb-8 animate-fade-in-delay-2">
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 animate-fade-in-delay-2">
         Custom software development for businesses and individuals. 
         Specializing in web and mobile applications that make an impact.
       </p>
 
       <a href="/contact" 
-         class="inline-block bg-emerald-500 hover:bg-emerald-600 
+         class="inline-block bg-emerald-500 hover:bg-emerald-400 
                 text-white font-semibold px-8 py-4 rounded-lg 
-                transform transition duration-200 hover:scale-105
+                transform transition-all duration-300 hover:scale-105 hover:-translate-y-0.5
                 animate-fade-in-delay-3">
         Get Started
       </a>
@@ -27,44 +27,44 @@
   </section>
 
   <!-- Services Section -->
-  <section class="container mx-auto px-4 py-20 bg-[#1c1c1c] opacity-0">
+  <section class="container mx-auto px-4 py-20 opacity-0">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
         Our Services
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Mobile Development Card -->
-        <div class="bg-gray-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-          <div class="text-emerald-500 mb-4">
+        <div class="bg-black/[0.02] dark:bg-white/[0.02] backdrop-blur-sm border border-black/[0.05] dark:border-white/[0.05] rounded-xl p-6 hover-glow">
+          <div class="text-emerald-600 dark:text-emerald-400 mb-4">
             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Mobile Development</h3>
-          <p class="text-gray-300">Native iOS and Android applications built with modern frameworks.</p>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Mobile Development</h3>
+          <p class="text-gray-600 dark:text-gray-300">Native iOS and Android applications built with modern frameworks.</p>
         </div>
 
         <!-- Web Development Card -->
-        <div class="bg-gray-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-          <div class="text-emerald-500 mb-4">
+        <div class="bg-black/[0.02] dark:bg-white/[0.02] backdrop-blur-sm border border-black/[0.05] dark:border-white/[0.05] rounded-xl p-6 hover-glow">
+          <div class="text-emerald-600 dark:text-emerald-400 mb-4">
             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Web Development</h3>
-          <p class="text-gray-300">Responsive, modern web applications built with cutting-edge technologies.</p>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Web Development</h3>
+          <p class="text-gray-600 dark:text-gray-300">Responsive, modern web applications built with cutting-edge technologies.</p>
         </div>
 
         <!-- Consulting Card -->
-        <div class="bg-gray-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-          <div class="text-emerald-500 mb-4">
+        <div class="bg-black/[0.02] dark:bg-white/[0.02] backdrop-blur-sm border border-black/[0.05] dark:border-white/[0.05] rounded-xl p-6 hover-glow">
+          <div class="text-emerald-600 dark:text-emerald-400 mb-4">
             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Software Consulting</h3>
-          <p class="text-gray-300">Expert guidance and development services for your digital projects.</p>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Software Consulting</h3>
+          <p class="text-gray-600 dark:text-gray-300">Expert guidance and development services for your digital projects.</p>
         </div>
       </div>
     </div>
@@ -73,46 +73,46 @@
   <!-- Core Values Section -->
   <section class="container mx-auto px-4 py-20 opacity-0">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
         Our Core Values
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Innovation Card -->
         <div class="text-center">
-          <div class="text-emerald-500 mb-4">
+          <div class="text-emerald-600 dark:text-emerald-400 mb-4">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3">Innovation</h3>
-          <p class="text-gray-300">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Innovation</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Embracing cutting-edge technologies and creative solutions to solve complex challenges.
           </p>
         </div>
 
         <!-- User-Focused Card -->
         <div class="text-center">
-          <div class="text-emerald-500 mb-4">
+          <div class="text-emerald-600 dark:text-emerald-400 mb-4">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3">User-Focused</h3>
-          <p class="text-gray-300">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">User-Focused</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Creating intuitive experiences that prioritize user needs and satisfaction.
           </p>
         </div>
 
         <!-- Quality Card -->
         <div class="text-center">
-          <div class="text-emerald-500 mb-4">
+          <div class="text-emerald-600 dark:text-emerald-400 mb-4">
             <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
             </svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3">Quality</h3>
-          <p class="text-gray-300">
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Quality</h3>
+          <p class="text-gray-600 dark:text-gray-300">
             Delivering robust, maintainable solutions that exceed expectations.
           </p>
         </div>
@@ -123,16 +123,16 @@
   <!-- CTA Section -->
   <section class="container mx-auto px-4 py-20 opacity-0">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
         Ready to Transform Your Ideas?
       </h2>
-      <p class="text-lg text-gray-300 mb-8">
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
         Let's discuss your project and create something amazing together.
       </p>
       <a href="/contact" 
-         class="inline-block bg-emerald-500 hover:bg-emerald-600 
+         class="inline-block bg-emerald-500 hover:bg-emerald-400 
                 text-white font-semibold px-8 py-4 rounded-lg 
-                transform transition duration-200 hover:scale-105">
+                transform transition-all duration-300 hover:scale-105 hover:-translate-y-0.5">
         Get in Touch
       </a>
     </div>

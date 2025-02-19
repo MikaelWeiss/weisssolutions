@@ -8,6 +8,9 @@
       {assigns[:page_title] || "Software Development & Consulting"}
     </.live_title>
     
+    <!-- Add Inter font -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
     <!-- Prevent flash of unstyled content -->
     <script>
       if (!('theme' in localStorage)) {
@@ -22,25 +25,31 @@
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
     </script>
   </head>
-  <body class="bg-[#1c1c1c] dark:bg-[#1c1c1c] transition-all duration-500 ease-in-out h-full">
+  <body class="font-sans min-h-screen text-gray-900 dark:text-gray-300 antialiased relative">
+    <!-- Fixed Background -->
+    <div class="fixed inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-[#1c1c1c] dark:to-[#131313] -z-10"></div>
+    
+    <!-- Subtle noise texture overlay -->
+    <div class="fixed inset-0 bg-noise opacity-[0.03] pointer-events-none -z-10"></div>
+    
     <!-- Navigation Bar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#1c1c1c]/90 dark:bg-[#1c1c1c]/90 backdrop-blur-md border-b border-gray-800/20">
-      <div class="container mx-auto px-6">
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-black/[0.05] dark:border-white/[0.05] bg-white/80 dark:bg-[#1c1c1c]/80">
+      <div class="max-w-7xl mx-auto px-6">
         <div class="flex items-center h-20">
           <!-- Logo/Home Link -->
-          <a href="/" class="text-2xl font-bold tracking-tight text-white hover:text-emerald-500 transition-colors">
+          <a href="/" class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400 transition-all duration-300">
             Weiss Solutions
           </a>
 
           <!-- Navigation Links -->
-          <div class="hidden md:flex items-center ml-auto">
-            <a href="/" class="px-5 py-2 text-sm font-medium text-gray-300 hover:text-emerald-500 transition-colors">
+          <div class="hidden md:flex items-center ml-auto space-x-1">
+            <a href="/" class="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
               Home
             </a>
-            <a href="/work" class="px-5 py-2 text-sm font-medium text-gray-300 hover:text-emerald-500 transition-colors">
+            <a href="/work" class="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
               Work
             </a>
-            <a href="/contact" class="px-5 py-2 text-sm font-medium text-gray-300 hover:text-emerald-500 transition-colors">
+            <a href="/contact" class="px-5 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
               Contact
             </a>
 
@@ -55,7 +64,7 @@
             <.dark_mode_toggle />
             <button 
               type="button"
-              class="p-2 text-gray-300 hover:text-emerald-500 rounded-lg transition-colors"
+              class="p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300"
               phx-click={JS.toggle(to: "#mobile-menu")}
             >
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,23 +76,23 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden border-t border-gray-800/20">
-        <div class="container mx-auto px-6 py-4">
-          <a href="/" class="block py-3 text-base font-medium text-gray-300 hover:text-emerald-500 transition-colors">
+      <div id="mobile-menu" class="hidden md:hidden border-t border-black/[0.05] dark:border-white/[0.05]">
+        <div class="max-w-7xl mx-auto px-6 py-4 space-y-1">
+          <a href="/" class="block px-4 py-3 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
             Home
           </a>
-          <a href="/work" class="block py-3 text-base font-medium text-gray-300 hover:text-emerald-500 transition-colors">
+          <a href="/work" class="block px-4 py-3 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
             Work
           </a>
-          <a href="/contact" class="block py-3 text-base font-medium text-gray-300 hover:text-emerald-500 transition-colors">
+          <a href="/contact" class="block px-4 py-3 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/[0.05] dark:hover:bg-white/[0.05] rounded-lg transition-all duration-300">
             Contact
           </a>
         </div>
       </div>
     </nav>
 
-    <!-- Add padding to account for fixed navbar -->
-    <div class="pt-20">
+    <!-- Main Content -->
+    <div class="pt-20 relative">
       {@inner_content}
     </div>
   </body>
