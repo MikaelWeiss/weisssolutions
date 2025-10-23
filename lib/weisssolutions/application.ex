@@ -9,7 +9,6 @@ defmodule Weisssolutions.Application do
   def start(_type, _args) do
     children = [
       WeisssolutionsWeb.Telemetry,
-      {DNSCluster, query: Application.get_env(:weisssolutions, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Weisssolutions.PubSub},
       # Start a worker by calling: Weisssolutions.Worker.start_link(arg)
       # {Weisssolutions.Worker, arg},
